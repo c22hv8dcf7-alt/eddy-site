@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NymphCount — the tray counter that shows its work</title>
+<meta name="description" content="NymphCount counts and identifies benthic macroinvertebrates from a photo of your sorting tray, and computes HBI and %EPT from the tally. A Mac app for labs, students, and field researchers — in active development.">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="strip">NymphCount is in active development · The auto-update release is on its way</div>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html"><span class="mark" aria-hidden="true">≋</span><b>NymphCount</b></a>
+  <nav class="main">
+    <a href="index.html" aria-current="page">The App</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="research.html">Research</a>
+    <a class="btn navcta" href="licensing.html">Licensing — coming soon</a>
+  </nav>
+  <nav class="shelf" aria-label="The rooms of this house"><a class="btn navthemes" href="how-it-works.html">How It Works</a><a class="btn navthemes" href="research.html">Vital Water Research</a><a class="btn navthemes" href="licensing.html">Lab Licensing</a></nav>
+</div></header>
+
+<div class="hero">
+  <!-- The living creek — the same scene that opens the app. Rings,
+       bubbles and drifting light, drawn in CSS; under Reduce Motion
+       it rests as the still frame below. -->
+  <div class="creek" aria-hidden="true">
+    <div class="creek-light"></div>
+    <div class="creek-shimmer"></div>
+    <div class="creek-heart"></div>
+    <span class="ripple" style="width:340px;height:340px"></span>
+    <span class="ripple r2" style="width:340px;height:340px"></span>
+    <span class="ripple r3" style="width:340px;height:340px"></span>
+    <span class="ripple r4" style="width:340px;height:340px"></span>
+    <span class="ripple r5" style="width:560px;height:560px"></span>
+    <span class="ripple r6" style="width:560px;height:560px"></span>
+    <span class="ripple r7" style="width:560px;height:560px"></span>
+    <span class="ripple r8" style="width:560px;height:560px"></span>
+    <span class="bubble" style="left:18%;top:88%;width:7px;height:7px"></span>
+    <span class="bubble" style="left:26%;top:92%;width:5px;height:5px;animation-delay:-3s"></span>
+    <span class="bubble" style="left:63%;top:90%;width:8px;height:8px;animation-delay:-5.5s"></span>
+    <span class="bubble" style="left:74%;top:94%;width:5px;height:5px;animation-delay:-1.8s"></span>
+    <span class="bubble" style="left:82%;top:89%;width:6px;height:6px;animation-delay:-7.2s"></span>
+    <span class="bubble" style="left:44%;top:93%;width:4px;height:4px;animation-delay:-4.4s"></span>
+  </div>
+  <div class="wrap">
+  <p class="over">Meet</p>
+  <h1 class="giant">NymphCount</h1>
+  <p class="tag">The tray counter that shows its work.</p>
+  <p class="sub">NymphCount counts and identifies benthic macroinvertebrates from a photo of your sorting tray, then computes the water-quality indices — HBI and %EPT — from the tally. You stay the taxonomist; it does the counting and the arithmetic.</p>
+  <div class="row">
+    <a class="btn" href="how-it-works.html">See how it works</a>
+    <a class="btn ghost" href="research.html">The research behind it</a>
+  </div>
+  <p class="req-badge"><span class="req-badge-label">Runs on</span> Mac · macOS 10.13 or later <span class="req-badge-note">— the framework default; the build sets no floor of its own</span></p>
+  <p class="trust-line">Works fully offline · Your photos never leave your machine · No account</p>
+  <p class="status-line">In active development · Auto-update release on its way</p>
+  <p class="fine">NO ACCURACY FIGURE PUBLISHED UNTIL IT IS MEASURED · NOTHING FOR SALE YET</p>
+  </div>
+</div>
+
+<div class="band" aria-hidden="true"><div class="band-track">
+  <span>Counts the tray ✦</span><span>Groups the kinds ✦</span><span>HBI · %EPT · EPT richness ✦</span><span>Works offline ✦</span><span>Shows its work ✦</span><span>You stay the taxonomist ✦</span>
+  <span>Counts the tray ✦</span><span>Groups the kinds ✦</span><span>HBI · %EPT · EPT richness ✦</span><span>Works offline ✦</span><span>Shows its work ✦</span><span>You stay the taxonomist ✦</span>
+</div></div>
+
+<section><div class="wrap">
+  <p class="kicker">The App</p>
+  <h2>A photo goes in. <span class="k">Indices come out.</span></h2>
+  <p class="lede">Sort the sample the way you already do, photograph the tray, and NymphCount takes it from there — every specimen marked on the photo, every mark open to your inspection and correction.</p>
+  <div class="grid">
+    <div class="card"><span class="ic">◎</span><h3>Count</h3><p>Every specimen it finds gets a mark on the photo and a place in the total — one mark per animal, placed where the animal is, so the count can be checked at a glance.</p></div>
+    <div class="card"><span class="ic">≋</span><h3>Group &amp; identify</h3><p>Counted specimens are sorted into the kinds the indices are built from. Anything that can&rsquo;t be settled is set aside as unsorted rather than guessed into a group.</p></div>
+    <div class="card"><span class="ic">⚖</span><h3>Compute the indices</h3><p>HBI, %EPT, and EPT richness are computed from the verified tally, with the full tally sheet laid out — every group, its members, and the totals.</p></div>
+  </div>
+
+  <div class="specimens">
+    <figure class="photo-fig">
+      <img src="assets/mayfly-nymph.jpg" alt="A mayfly nymph in a dish, its feathery gills and three tails visible" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge A">A</span>Mayflies</span><span class="credit">Photo: <a href="https://www.inaturalist.org/observations/301707481">neyasit</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/stonefly-nymph.jpg" alt="A stonefly nymph, wet from the creek, resting on a sampling net" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge B">B</span>Stoneflies</span><span class="credit">Photo: <a href="https://www.inaturalist.org/observations/405661702">Evan</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/caddis-larva.jpg" alt="A caddisfly larva half out of the case it built" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge C">C</span>Caddisflies</span><span class="credit">Photo: <a href="https://www.inaturalist.org/observations/150243075">Johan Kjær Prehn</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+  </div>
+
+  <p class="links" style="margin-top:24px"><a href="how-it-works.html">Walk the whole pipeline →</a></p>
+</div></section>
+
+<section class="letterband"><div class="wrap">
+  <p class="kicker">The letter system</p>
+  <h2>Every kind has a letter. <span class="k">Every letter has a colour.</span></h2>
+  <p class="lede">Every animal on the tray wears two marks: its number in the count, and its group&rsquo;s letter in its group&rsquo;s colour — the same letters and colours the app stamps on the photo itself. These are the seventeen groups the water-quality indices are built from, A through Q. What can&rsquo;t be settled honestly wears the grey 0, Unsorted, until you call it.</p>
+  <div class="kind-chips" aria-label="All seventeen groups, by their letters">
+    <span class="chip"><span class="badge A">A</span>Mayflies</span>
+    <span class="chip"><span class="badge B">B</span>Stoneflies</span>
+    <span class="chip"><span class="badge C">C</span>Caddisflies</span>
+    <span class="chip"><span class="badge D">D</span>True flies &amp; midges</span>
+    <span class="chip"><span class="badge E">E</span>Scuds</span>
+    <span class="chip"><span class="badge F">F</span>Isopods</span>
+    <span class="chip"><span class="badge G">G</span>Crayfish</span>
+    <span class="chip"><span class="badge H">H</span>Snails</span>
+    <span class="chip"><span class="badge I">I</span>Clams &amp; mussels</span>
+    <span class="chip"><span class="badge J">J</span>Leeches</span>
+    <span class="chip"><span class="badge K">K</span>Aquatic worms</span>
+    <span class="chip"><span class="badge L">L</span>Dragonflies &amp; damselflies</span>
+    <span class="chip"><span class="badge M">M</span>Beetles</span>
+    <span class="chip"><span class="badge N">N</span>Hellgrammites &amp; alderflies</span>
+    <span class="chip"><span class="badge O">O</span>True bugs</span>
+    <span class="chip"><span class="badge P">P</span>Flatworms</span>
+    <span class="chip"><span class="badge Q">Q</span>Mites</span>
+    <span class="chip"><span class="badge U">0</span>Unsorted</span>
+  </div>
+  <div class="ept-callout">
+    <p><span class="ept-letters">A · B · C</span>&ensp;<b>The clean-water core.</b> Mayflies, stoneflies, and caddisflies are the EPT groups — the kinds most sensitive to pollution, and the ones %EPT and EPT richness are counted from. When a stream is healthy, its tray leans on these three letters.</p>
+  </div>
+  <p class="links" style="margin-top:22px"><a href="how-it-works.html#letters">The full key — every letter explained →</a> · <a href="how-it-works.html#gallery">See the specimen gallery →</a></p>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <p class="kicker">Who it&rsquo;s for</p>
+  <h2>Built for the people <span class="k">at the bench</span></h2>
+  <p class="lede">Anyone who has spent an afternoon hunched over a sorting tray with a tally counter knows the bottleneck isn&rsquo;t the science — it&rsquo;s the counting.</p>
+  <div class="grid">
+    <div class="card"><span class="ic">⌂</span><h3>Teaching &amp; research labs</h3><p>Bench counts for biomonitoring work, with the tally and the indices in the shapes your analysis already uses — and the raw count kept beside every correction, so the record stays honest.</p></div>
+    <div class="card"><span class="ic">✎</span><h3>Students</h3><p>Learn the groups while you count. Specimens are sorted into the kinds the indices are built from, and the ones that need a closer look are flagged rather than silently named.</p></div>
+    <div class="card"><span class="ic">≋</span><h3>Field researchers &amp; watershed groups</h3><p>Volunteer and field biomonitoring runs on trays counted away from the lab. NymphCount works fully offline, on the Mac already in the field station.</p></div>
+  </div>
+  <figure class="photo-fig wide">
+    <img src="assets/bench-tray.jpg" alt="A real sorting dish on the bench: two clams and a scatter of scuds in shallow water">
+    <figcaption><b>The bench, as it is.</b> A sorted dish mid-count — clams and scuds in shallow water, under ordinary bench light. This is the photo NymphCount starts from.<span class="credit">Levi&rsquo;s own tray, photographed at the bench</span></figcaption>
+  </figure>
+</div></section>
+
+<section><div class="wrap">
+  <p class="kicker">Status</p>
+  <h2>Checked first, <span class="k">claimed later</span></h2>
+  <p class="lede">NymphCount is in active development and bench testing. It is being checked against hand-counted trays before it is offered to anyone — and no accuracy figure will appear on this site until that checking is done and the number is earned.</p>
+  <div class="status-panel">
+    <span class="status-tag">In active development</span>
+    <h3>Where NymphCount stands</h3>
+    <p>A release with built-in automatic updates is on its way; when it lands, a licensed lab installs once and stays current from inside the app. Until then, this site is the front door, and the <a href="licensing.html">licensing page</a> explains what happens at launch.</p>
+  </div>
+  <!-- SCREENSHOT SLOTS: empty of imagery until the sitting. Real
+       captures from the FINAL version land here — never synthetic,
+       never old-version shots. Each slot names the shot it waits for,
+       and the section reads complete without them. -->
+  <figure class="app-frame" aria-label="Slot waiting for a final-version screenshot of the count face">
+    <div class="app-frame-bar"><span></span><span></span><span></span><em>NymphCount</em></div>
+    <div class="app-frame-body">
+      <p class="slot-tag">Final-version screenshot — from the sitting</p>
+      <p class="slot-text">The count face — a tray counted on the final version,<br>every specimen marked where it sits.</p>
+      <p class="slot-text small">This frame is waiting for the real capture, taken from the build this page describes.</p>
+    </div>
+  </figure>
+  <div class="slot-grid">
+    <div class="mini-slot">
+      <p class="slot-tag">Final-version screenshot — from the sitting</p>
+      <p>The lettered results face — every group wearing its letter and colour, the indices beside the tally.</p>
+    </div>
+    <div class="mini-slot">
+      <p class="slot-tag">Final-version screenshot — from the sitting</p>
+      <p>The Tray Line — dishes counted as they slide under the camera, two cameras watching.</p>
+    </div>
+    <div class="mini-slot">
+      <p class="slot-tag">Final-version screenshot — from the sitting</p>
+      <p>The Creek opening — the living water the app wakes up under.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <p class="kicker">The House</p>
+  <h2>One house, <span class="k">three rooms</span></h2>
+  <div class="grid">
+    <div class="card"><span class="ic">→</span><h3>How it works</h3><p>Photo → count → group and identify → indices. The whole pipeline, in plain language.</p><p><a class="more" href="how-it-works.html">Walk the pipeline →</a></p></div>
+    <div class="card"><span class="ic">▤</span><h3>Vital Water Research</h3><p>The research program behind the app — papers on stream ecology, wetland birds, and invasive species by Lee Vitaly Wyszynski.</p><p><a class="more" href="research.html">Visit the research room →</a></p></div>
+    <div class="card"><span class="ic">§</span><h3>Lab licensing</h3><p>Licensing for labs arrives at launch. Nothing is for sale yet — this room is deliberately dark until then.</p><p><a class="more" href="licensing.html">See the licensing page →</a></p></div>
+  </div>
+</div></section>
+
+<footer class="site"><div class="wrap">
+  <div class="cols">
+    <div><b>NymphCount</b><br><a href="index.html">The App</a><br><a href="how-it-works.html">How It Works</a></div>
+    <div><b>The House</b><br><a href="research.html">Vital Water Research</a><br><a href="licensing.html">Lab Licensing</a></div>
+    <div><b>About</b><br>Built by Lee Vitaly Wyszynski,<br>Lebanon Valley College.<br>Contact — <a class="contact-email" href="#">email</a></div>
+  </div>
+  <p class="fineprint">© 2026 Lee Vitaly Wyszynski. NymphCount is in active development and bench testing; no accuracy figure is published on this site until it has been measured and earned. Nothing here is for sale yet — lab licensing arrives with the launch release.</p>
+</div></footer>
+<script src="site-config.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How It Works — NymphCount</title>
+<meta name="description" content="How NymphCount works: photograph the tray, count the specimens, group and identify them, and compute HBI, %EPT, and EPT richness — in plain language.">
+<link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="strip">NymphCount is in active development · The auto-update release is on its way</div>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html"><span class="mark" aria-hidden="true">≋</span><b>NymphCount</b></a>
+  <nav class="main">
+    <a href="index.html">The App</a>
+    <a href="how-it-works.html" aria-current="page">How It Works</a>
+    <a href="research.html">Research</a>
+    <a class="btn navcta" href="licensing.html">Licensing — coming soon</a>
+  </nav>
+  <nav class="shelf" aria-label="The rooms of this house"><a class="btn navthemes" href="how-it-works.html">How It Works</a><a class="btn navthemes" href="research.html">Vital Water Research</a><a class="btn navthemes" href="licensing.html">Lab Licensing</a></nav>
+</div></header>
+
+<section><div class="wrap">
+  <p class="kicker">How it works</p>
+  <h1 class="page-title">From tray photo to <span class="k">water-quality indices</span></h1>
+  <p class="lede">No black boxes. This is the whole pipeline, the same way it runs on the bench — four steps, and your judgment stays in charge of every one of them.</p>
+  <div class="steps">
+    <div class="step"><span class="num">1</span><h3>Photograph the tray</h3><p>Sort your sample into a tray the way you already do, and take a photo of it — an ordinary camera under ordinary bench light. The photo is the input; nothing about your workflow changes to feed the app.</p></div>
+    <div class="step"><span class="num">2</span><h3>Count</h3><p>NymphCount goes over the photo and marks every specimen it finds, one mark per animal, and totals them. Every mark sits on the photo where the specimen is, so you can see exactly what was counted — and what wasn&rsquo;t.</p></div>
+    <div class="step"><span class="num">3</span><h3>Group &amp; identify</h3><p>Each counted specimen is sorted into its group — the kinds the water-quality indices are built from. Specimens that can&rsquo;t be settled are set aside as unsorted rather than guessed into a group. You review the tray, tap to correct anything you read differently, and your correction and the original count stay side by side on the record.</p></div>
+    <div class="step"><span class="num">4</span><h3>Get the indices</h3><p>From the verified tally, NymphCount computes the indices and lays out the full tally sheet — every group, its members, and the totals — ready for your notebook or your analysis.</p></div>
+  </div>
+  <figure class="photo-fig wide">
+    <img src="assets/bench-tray.jpg" alt="A real sorting dish on the bench: two clams and a scatter of scuds in shallow water" loading="lazy">
+    <figcaption><b>Step one, as it really looks.</b> A sorted dish on the bench — no staging, no special light. The pipeline starts from a photo like this one.<span class="credit">Levi&rsquo;s own tray, photographed at the bench</span></figcaption>
+  </figure>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <p class="kicker">The indices</p>
+  <h2>Three numbers, <span class="k">plainly explained</span></h2>
+  <div class="grid">
+    <div class="card"><span class="ic">HBI</span><h3>Hilsenhoff Biotic Index</h3><p>Each group carries a tolerance value for organic pollution; HBI weighs your tally by those values into one score that reads as water quality.</p></div>
+    <div class="card"><span class="ic">%EPT</span><h3>The sensitive share</h3><p>The share of your sample made up of mayflies, stoneflies, and caddisflies — the groups most sensitive to pollution. A healthy stream&rsquo;s sample leans heavily on them.</p></div>
+    <div class="card"><span class="ic">EPT</span><h3>EPT richness</h3><p>How many distinct mayfly, stonefly, and caddisfly kinds are present. Sensitive kinds disappear first when water quality slips, so their variety is a signal in itself.</p></div>
+  </div>
+</div></section>
+
+<section id="letters"><div class="wrap">
+  <p class="kicker">The letter key</p>
+  <h2>Seventeen letters, <span class="k">one per kind</span></h2>
+  <p class="lede">These are the groups behind the letters — the same table the app sorts by, in the app&rsquo;s own colours. Three of them are marked: A, B, and C together are the EPT core, the clean-water kinds the indices lean on hardest.</p>
+  <div class="key-grid">
+    <div class="key-card ept"><span class="badge A">A</span><div><span class="ept-tag">EPT · clean-water core</span><h3>Mayflies <span class="latin">Ephemeroptera</span></h3><p>Nymphs breathe through feathery gills along the abdomen and usually carry three tails. They are among the first animals to disappear when water quality slips.</p></div></div>
+    <div class="key-card ept"><span class="badge B">B</span><div><span class="ept-tag">EPT · clean-water core</span><h3>Stoneflies <span class="latin">Plecoptera</span></h3><p>Two-tailed nymphs that need cold, well-oxygenated water to live. A stream that holds stoneflies is a stream in good shape.</p></div></div>
+    <div class="key-card ept"><span class="badge C">C</span><div><span class="ept-tag">EPT · clean-water core</span><h3>Caddisflies <span class="latin">Trichoptera</span></h3><p>Larvae that build portable cases out of sand grains, twigs, or leaf bits, and carry their shelter with them.</p></div></div>
+    <div class="key-card"><span class="badge D">D</span><div><h3>True flies &amp; midges <span class="latin">Diptera</span></h3><p>Midge larvae and their kin — including the red bloodworms of the sediment. Many tolerate pollution that empties a stream of everything else.</p></div></div>
+    <div class="key-card"><span class="badge E">E</span><div><h3>Scuds <span class="latin">Amphipoda</span></h3><p>Small, shrimp-like swimmers, flattened side-to-side and curled like a comma. They shred dead leaves and feed much of the stream.</p></div></div>
+    <div class="key-card"><span class="badge F">F</span><div><h3>Isopods <span class="latin">Isopoda</span></h3><p>Flattened, many-legged crawlers — the water&rsquo;s answer to the woodlouse — grazing and scavenging along the bottom.</p></div></div>
+    <div class="key-card"><span class="badge G">G</span><div><h3>Crayfish <span class="latin">Decapoda</span></h3><p>The stream&rsquo;s small lobsters: burrowers and scavengers, and food for nearly everything bigger.</p></div></div>
+    <div class="key-card"><span class="badge H">H</span><div><h3>Snails <span class="latin">Gastropoda</span></h3><p>Grazers that rasp algae and biofilm off the stones, carrying a coiled or cone-shaped shell with them.</p></div></div>
+    <div class="key-card"><span class="badge I">I</span><div><h3>Clams &amp; mussels <span class="latin">Bivalvia</span></h3><p>Two-shelled filter feeders, half-buried in the sediment, sifting their food from the water that passes over them.</p></div></div>
+    <div class="key-card"><span class="badge J">J</span><div><h3>Leeches <span class="latin">Hirudinea</span></h3><p>Soft, segmented swimmers with a sucker at each end. Many hunt snails and worms; a few take blood where they can get it.</p></div></div>
+    <div class="key-card"><span class="badge K">K</span><div><h3>Aquatic worms <span class="latin">Oligochaeta</span></h3><p>Slender, segmented worms — often red — that live in the mud and wave their tails in the current. In great numbers, a classic sign of organically rich water.</p></div></div>
+    <div class="key-card"><span class="badge L">L</span><div><h3>Dragonflies &amp; damselflies <span class="latin">Odonata</span></h3><p>Ambush predators long before they ever fly: the nymphs hunt from the bottom with a hinged, extendable jaw.</p></div></div>
+    <div class="key-card"><span class="badge M">M</span><div><h3>Beetles <span class="latin">Coleoptera</span></h3><p>Riffle beetles walk the streambed underwater while diving beetles row across it — hard-winged grazers and hunters.</p></div></div>
+    <div class="key-card"><span class="badge N">N</span><div><h3>Hellgrammites &amp; alderflies <span class="latin">Megaloptera</span></h3><p>Large larvae with strong jaws and a fringe of fleshy filaments down each side. The hellgrammite is the biggest animal in most trays.</p></div></div>
+    <div class="key-card"><span class="badge O">O</span><div><h3>True bugs <span class="latin">Hemiptera</span></h3><p>Water boatmen, backswimmers, water scorpions, and giant water bugs — air-breathing hunters and grazers at the surface and below it.</p></div></div>
+    <div class="key-card"><span class="badge P">P</span><div><h3>Flatworms <span class="latin">Turbellaria</span></h3><p>Soft, unsegmented planarians that glide over the stones, feeding on smaller animals as they go.</p></div></div>
+    <div class="key-card"><span class="badge Q">Q</span><div><h3>Mites <span class="latin">Acari</span></h3><p>Tiny water mites — round, eight-legged, often bright red — swimming and crawling among the plants and the sediment.</p></div></div>
+    <div class="key-card"><span class="badge U">0</span><div><h3>Unsorted</h3><p>Not a group at all: the honest holding place for a specimen that hasn&rsquo;t been keyed yet. It wears the grey 0 until someone calls it — it is never guessed into a letter.</p></div></div>
+  </div>
+</div></section>
+
+<section class="alt" id="gallery"><div class="wrap">
+  <p class="kicker">The specimen gallery</p>
+  <h2>What the groups <span class="k">look like</span></h2>
+  <p class="lede">Real animals, really photographed — one portrait per letter. One is Levi&rsquo;s own bench photography; the rest are openly licensed field photographs, each credited to its photographer. The gallery shows the kinds themselves, nothing more.</p>
+  <div class="gallery">
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-a.jpg" alt="A mayfly nymph in a dish, its feathery gills and three tails visible" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge A">A</span>Mayflies</span><span class="taxon">Acanthametropus nikolskyi</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/301707481">neyasit</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-b.jpg" alt="A stonefly nymph, wet from the creek, resting on a sampling net" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge B">B</span>Stoneflies</span><span class="taxon">Hesperoperla pacifica</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/405661702">Evan</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-c.jpg" alt="A caddisfly larva half out of the case it built" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge C">C</span>Caddisflies</span><span class="taxon">Ithytrichia lamellaris</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/150243075">Johan Kjær Prehn</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-d.jpg" alt="Pink midge larvae lying on a green leaf surface" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge D">D</span>True flies &amp; midges</span><span class="taxon">Metriocnemus knabi</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/8663345">Katja Schulz</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-e.jpg" alt="A scud curled in side view, speckled and translucent" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge E">E</span>Scuds</span><span class="taxon">Hyalella</span><span class="credit">Photo: <a href="https://www.inaturalist.org/observations/60462952">public domain (CC0)</a>, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-f.jpg" alt="An aquatic isopod from above, its segmented back plates clearly showing" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge F">F</span>Isopods</span><span class="taxon">Conasellus brevicaudus bivittatus</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/168723735">Dr. Andrew G. Cannizzaro</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-g.jpg" alt="A crayfish on a pale surface, claws forward" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge G">G</span>Crayfish</span><span class="taxon">Creaserinus gordoni</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/12054689">Mike Duran</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-h.jpg" alt="A ramshorn snail at the surface film, its flat spiral shell showing" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge H">H</span>Snails</span><span class="taxon">Planorbis planorbis</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/75198167">Jan Ebr &amp; Ivana Ebrová</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-i.jpg" alt="A clam in a petri dish on the bench, its ridged shell closed" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge I">I</span>Clams &amp; mussels</span><span class="credit">Levi&rsquo;s own bench photography</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-j.jpg" alt="A leech with a mottled, patterned back, stretched out flat" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge J">J</span>Leeches</span><span class="taxon">Placobdella parasitica</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/375934810">Zakqary Roy</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-k.jpg" alt="Pale aquatic worms coiled in a shallow dish" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge K">K</span>Aquatic worms</span><span class="taxon">Lumbriculus variegatus</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/177626932">Kim P.-Schmidt</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-l.jpg" alt="A damselfly resting among the shed skins it climbed out of" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge L">L</span>Dragonflies &amp; damselflies</span><span class="taxon">Austrolestes annulosus</span><span class="credit">Photo: <a href="https://www.inaturalist.org/observations/39233129">public domain (CC0)</a>, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-m.jpg" alt="A riffle beetle from above, brown and oval with ridged wing covers" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge M">M</span>Beetles</span><span class="taxon">Neoelmis caesa</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/343348423">Joseph Aubert</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-n.jpg" alt="A large larva with strong jaws and a fringe of filaments down each side" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge N">N</span>Hellgrammites &amp; alderflies</span><span class="taxon">Archichauliodes diversus</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/145809781">Saryu Mae 前 朝琉</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-o.jpg" alt="A water scorpion among duckweed, its breathing tube at its tail" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge O">O</span>True bugs</span><span class="taxon">Nepa cinerea</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/31907350">Attila Oláh</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-p.jpg" alt="A dark flatworm gliding over pale sand" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge P">P</span>Flatworms</span><span class="taxon">Dugesia gonocephala</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/400238862">oskar0710</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+    <figure class="photo-fig">
+      <img src="assets/gallery/gallery-q.jpg" alt="A bright red water mite in a dish of water" loading="lazy">
+      <figcaption><span class="spec-tag"><span class="badge Q">Q</span>Mites</span><span class="taxon">Hydrachna globosa</span><span class="credit">Photo: © <a href="https://www.inaturalist.org/observations/3658976">Donald Hobern</a>, CC BY, via iNaturalist</span></figcaption>
+    </figure>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <p class="kicker">An honest note</p>
+  <h2>You stay <span class="k">the taxonomist</span></h2>
+  <p class="lede">NymphCount sorts specimens into the groups the indices need. It does not silently guess at doubtful specimens — anything it can&rsquo;t settle is shown to you as unsorted, with the tray in front of you, and your call is the one that lands on the record.</p>
+  <p class="links" style="margin-top:20px"><a href="research.html">The research program behind the app →</a></p>
+</div></section>
+
+<footer class="site"><div class="wrap">
+  <div class="cols">
+    <div><b>NymphCount</b><br><a href="index.html">The App</a><br><a href="how-it-works.html">How It Works</a></div>
+    <div><b>The House</b><br><a href="research.html">Vital Water Research</a><br><a href="licensing.html">Lab Licensing</a></div>
+    <div><b>About</b><br>Built by Lee Vitaly Wyszynski,<br>Lebanon Valley College.<br>Contact — <a class="contact-email" href="#">email</a></div>
+  </div>
+  <p class="fineprint">© 2026 Lee Vitaly Wyszynski. NymphCount is in active development and bench testing; no accuracy figure is published on this site until it has been measured and earned. Nothing here is for sale yet — lab licensing arrives with the launch release.</p>
+</div></footer>
+<script src="site-config.js" defer></script>
+</body>
+</html>
